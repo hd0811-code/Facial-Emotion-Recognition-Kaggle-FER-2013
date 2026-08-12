@@ -1,5 +1,5 @@
-# Facial-Emotion-Recognition-Kaggle-FER-2013
-    **Pixels ➡️ Features ➡️ Emotions!** 🖼️🧠💗
+#      Facial-Emotion-Recognition-Kaggle-FER-2013
+   **Pixels ➡️ Features ➡️ Emotions!** 🖼️🧠💗
 
 💡 A simple deep learning project for recognizing facial emotions from images using **PyTorch** and a custom **Convolutional Neural Network (CNN)**. 
 
