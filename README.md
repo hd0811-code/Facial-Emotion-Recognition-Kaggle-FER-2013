@@ -25,7 +25,7 @@ The project uses the **FER2013 dataset** from Kaggle, where facial images are gr
 pip install torch torchvision matplotlib seaborn numpy scikit-learn
 ```
 
-### 3. Prepare the FER2013 dataset 📁
+### 2. Prepare the FER2013 dataset 📁
 
 The dataset should contain separate `train` and `test` folders:
 
