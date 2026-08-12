@@ -15,7 +15,7 @@ The model looks at a facial image and predicts one of **7 emotions**:
 * 😢 Sad
 * 😲 Surprise
 
-The project uses the **FER2013 dataset**, where facial images are grayscale and resized to **48 × 48 pixels**.
+The project uses the **FER2013 dataset** from Kaggle, where facial images are grayscale and resized to **48 × 48 pixels**.
 
 ## 📦 Setup
 
