@@ -1,7 +1,8 @@
 #      Facial-Emotion-Recognition-Kaggle-FER-2013
    **Pixels ➡️ Features ➡️ Emotions!** 🖼️🧠💗
 
-💡 A simple deep learning project for recognizing facial emotions from images using **PyTorch** and a custom **Convolutional Neural Network (CNN)**. 
+💡A deep learning project for facial emotion recognition using **PyTorch** and a custom **Convolutional Neural Network (CNN)** trained from scratch on the **FER2013 dataset** from Kaggle. The model achieves a best observed test accuracy of approximately **69.04%**.
+
 
 ## What does it do?
 
@@ -15,7 +16,6 @@ The model looks at a facial image and predicts one of **7 emotions**:
 * 😢 Sad
 * 😲 Surprise
 
-The project uses the **FER2013 dataset** from Kaggle, where facial images are grayscale and resized to **48 × 48 pixels**.
 
 ## 📦 Setup
 
@@ -54,7 +54,7 @@ archive/
 
 A custom CNN is built with:
 
-`Image → Conv2D → ReLU → BatchNorm → MaxPool → Dropout → ... → Fully Connected → Emotion`
+`Image → Conv2D → BatchNorm → ReLU → MaxPool → Dropout → ... → Adaptive Average Pooling → Fully Connected → Emotion`
 
 The network gradually learns facial features and patterns that help distinguish different expressions.
 
@@ -62,16 +62,15 @@ The network gradually learns facial features and patterns that help distinguish 
 
 Training images are randomly transformed to improve generalization:
 
-* ↔️ Horizontal flipping
-* 🔄 Small rotations
-* 🖤 Grayscale normalization
+* ↔️ Random horizontal flipping
+* 🔄 Random rotations up to ±10°
 
 ## 🚀 Training
 
 For each epoch, the model follows:
 
 `Train 🏋️ → Evaluate 🧪 → Calculate Accuracy 📊 → Save Best Model 💾`
-Training and test loss/accuracy are recorded to track performance.
+
 
 
 
